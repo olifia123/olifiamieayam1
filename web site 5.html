@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Olifia Sang Bos Mie Ayam</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --dark: #1a1a1a;
+      --light: #fff;
+      --yellow: #ffe600;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #fff, #f9f6f0);
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    header img.decor {
+      width: 100px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      color: var(--gold);
+      font-size: 3.2em;
+      margin: 0;
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: var(--gold);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #b9912d;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-family: 'Great Vibes', cursive;
+      color: var(--gold);
+      font-size: 2.2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .portfolio p,
+    .about p,
+    .hours ul,
+    .testimonials blockquote,
+    .contact p {
+      font-size: 1.1em;
+      margin: 10px 0;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hours ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .hours ul li {
+      margin: 8px 0;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .menu li {
+      font-size: 1.2em;
+      margin: 15px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #ccc;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .testimonials blockquote {
+      font-style: italic;
+      border-left: 5px solid var(--gold);
+      padding-left: 15px;
+      margin: 20px auto;
+      max-width: 600px;
+      color: #555;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+      margin: 10px auto;
+      display: block;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: var(--yellow);
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    footer img.icon {
+      width: 30px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    footer p {
+      margin: 10px 0;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer p:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    .contact a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+
+      .menu li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header img.decor {
+        width: 80px;
+        top: 10px;
+        left: 10px;
+      }
+
+      .gallery img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with image decoration -->
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/3176/3176360.png" alt="Mie Ayam Icon" class="decor" />
+    <h1>Olifia Sang Bos Mie Ayam</h1>
+    <a href="https://wa.me/6281234567890" class="cta-button" target="_blank" rel="noopener">Pesan Sekarang</a>
+  </header>
+
+  <!-- Portfolio -->
+  <section class="section portfolio">
+    <h2>Portofolio</h2>
+    <p><strong>Nama:</strong> Olifia</p>
+    <p><strong>Umur:</strong> 21 tahun</p>
+    <p><strong>Tempat, Tanggal Lahir:</strong> Bandung, 15 Agustus 2005</p>
+    <p><strong>Nomor Telepon:</strong> 0823-4489-6131</p>
+  </section>
+
+  <!-- Menu -->
+  <section class="section menu">
+    <h2>Menu Andalan</h2>
+    <ul>
+      <li><span>Mie Ayam Spesial</span><span>Rp15.000</span></li>
+      <li><span>Es Teh Manis</span><span>Rp5.000</span></li>
+    </ul>
+  </section>
+
+  <!-- About Us -->
+  <section class="section about">
+    <h2>Tentang Olifia</h2>
+    <p>
+      Olifia Sang Bos Mie Ayam adalah usaha kuliner rumahan yang berdiri sejak tahun 2020. 
+      Kami mengutamakan cita rasa autentik mie ayam khas Indonesia dengan bumbu rahasia keluarga. 
+      Menggunakan bahan-bahan segar dan halal, kami siap memanjakan lidah Anda setiap hari!
+    </p>
+  </section>
+
+  <!-- Operating Hours -->
+  <section class="section hours">
+    <h2>Jam Operasional</h2>
+    <ul>
+      <li>Senin - Jumat: 10.00 - 20.00</li>
+      <li>Sabtu & Minggu: 10.00 - 22.00</li>
+    </ul>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <h2>Apa Kata Mereka?</h2>
+    <blockquote>
+      "Mie ayamnya enak banget, bumbunya mantap! Pelayanan cepat dan ramah." <br>– Rina, Bandung
+    </blockquote>
+    <blockquote>
+      "Langganan dari dulu! Favorit anak-anak juga!" <br>– Dedi, Cimahi
+    </blockquote>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery">
+  </section>
+  <!-- Map -->
+  <section class="section map">
+    <h2>Lokasi Kami</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63333.22959111553!2d107.59218768194412!3d-6.917464468315842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64f7a4f4e77%3A0x9e74c6cd66e85a6d!2sBandung!5e0!3m2!1sid!2sid!4v1694152915361!5m2!1sid!2sid" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <!-- Contact & Social Media -->
+  <section class="section contact">
+    <h2>Ikuti Kami</h2>
+    <p>📸 Instagram: <a href="https://instagram.com/ssigmagirlsintown" target="_blank" rel="noopener">@olifia_mieayam</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/6282344896131" target="_blank" rel="noopener">081
+
